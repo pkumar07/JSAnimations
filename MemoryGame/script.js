@@ -35,7 +35,7 @@ function revealCell(cell){
 
 function completedCell(cell){
     cell.completed = true;
-    cell.style.backgroundColor = "purple";
+    cell.style.backgroundColor = "green";
     numCompleted++;
 }
 
@@ -51,6 +51,17 @@ function startTimer(){
 function init(){
     var grid = document.getElementsByTagName("td");
     var array = generateRandomArray();
+
+    document.addEventListener('keydown',function(evt) {
+        if(evt.key > 0 && evt.key < 10){
+            grid[evt.key - 1].click();
+        }
+    });
+
+    document.getElementById("restart").addEventListener('click', function(){
+        location.reload();
+    });
+
     for(var i = 0; i<grid.length; i++){
         var cell = grid[i];
         
@@ -86,7 +97,7 @@ function init(){
 
                     if(numCompleted == 8){
                         document.getElementById("tablegrid").style.display ='none';
-                        document.getElementById("message").innerHTML = "Won";                        
+                        document.getElementById("message").innerHTML = " You Won!!";                        
                         clearInterval(interval);
                     }
 
