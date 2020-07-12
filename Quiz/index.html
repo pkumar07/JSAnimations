@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz</title>
+  <link rel = "stylesheet" href="css/style.css">
+  <script src = "js/script.js"></script>
+
+</head>
+<body>
+   
+    <h2>Quiz</h2>
+  
+    <div id = "hideDiv">
+      <button id = "StartButton" onclick= "startQuiz();">Click here to start the quiz</button>
+    </div>
+  
+  
+    <div id = "myQuestionSet">
+      <h3>Question:</h3>
+      <label id = "question">The question will be displayed here</label>
+      
+      <h3>Options:</h3>
+       <div id = "radiobuttons">
+       </div>
+      
+      
+      <button onclick = "checkAnswer();">Submit my answer
+      </button>
+        
+      
+    </div>
+  
+    <div id = "result">
+    </div>
+</body>
+</html>

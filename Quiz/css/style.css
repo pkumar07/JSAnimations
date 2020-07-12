@@ -1,0 +1,12 @@
+#hidediv{
+    display: block;
+  }
+  
+  #myQuestionSet{
+    display:none;
+  }
+  
+  #myresult{
+    display:none;
+  }
+  

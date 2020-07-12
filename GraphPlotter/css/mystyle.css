@@ -1,0 +1,58 @@
+
+section {
+    border:4px solid grey;
+    border-radius:15px;
+    box-shadow: 5px 5px 5px grey;
+    float:left;
+    height:360px;
+    padding: 20px;
+    margin:10px;
+  }
+
+  table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 4px;
+  margin-top:20px;
+}
+
+tbody>tr:nth-child(odd)>td {
+    background-color: lightGrey;
+}
+
+tr {
+    border-collapse: separate;
+}
+
+th,td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-left: 1px solid #dddddd;
+}
+
+td {
+    border-top: 1px solid #dddddd;
+}
+
+tbody:last-child tr:last-child>td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+tbody:last-child tr:last-child>td:last-child {
+    border-bottom-right-radius: 4px;
+}
+  
+  #plotSettings {
+    width:180px;
+  }
+  
+  #plotGraph {
+    width:550px;
+  }
+
+
